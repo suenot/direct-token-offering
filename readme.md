@@ -61,6 +61,34 @@ The TON blockchain is particularly well-suited for DTOs due to its high throughp
 - Protection against common attack vectors
 - Simple, auditable code
 
+## Available Implementations
+
+There are currently two implementations of the Direct Token Offering smart contract, each tailored for different use cases:
+
+### 1. DTO with Native TON
+This implementation allows investors to purchase project tokens using native TON coins. It's simpler to deploy and use, with lower gas costs and fewer dependencies.
+
+**GitHub Repository:** [https://github.com/suenot/ton-direct-token-offering-in-ton](https://github.com/suenot/ton-direct-token-offering-in-ton)
+
+Key features:
+- Uses native TON for transactions
+- Self-contained gas management
+- Simplified transaction flow
+- Lower deployment complexity
+
+### 2. DTO with USDT
+This implementation enables token purchases using USDT stable coins, providing price stability and familiarity for investors who prefer using stablecoins.
+
+**GitHub Repository:** [https://github.com/suenot/ton-direct-token-offering-in-usdt](https://github.com/suenot/ton-direct-token-offering-in-usdt)
+
+Key features:
+- Uses USDT for stable pricing
+- Compatible with TEP-74 token standard
+- Ideal for projects seeking stable-value investments
+- Includes USDT transfer notification handling
+
+**⚠️ WARNING: Both implementations are currently under active development and should not be used in production environments without thorough auditing and testing. ⚠️**
+
 ## The Future of Fundraising
 
 As the cryptocurrency market matures, we're seeing a shift away from complex, intermediary-dependent token distribution methods toward simpler, fairer approaches. Direct Token Offerings represent the natural evolution of this trend - bringing token sales back to their original purpose: connecting innovative projects directly with their supporters.
@@ -71,4 +99,6 @@ For projects seeking to build genuine communities rather than just raise funds, 
 
 ## Getting Started with DTO
 
-If you're a project considering a token offering, implementing a DTO on TON requires minimal technical overhead and provides maximum flexibility. The open-source DTO smart contract template can be deployed with customized parameters to suit your specific project needs and tokenomics model.
+If you're a project considering a token offering, implementing a DTO on TON requires minimal technical overhead and provides maximum flexibility. The open-source DTO smart contract templates can be deployed with customized parameters to suit your specific project needs and tokenomics model.
+
+Choose the implementation that best suits your requirements (TON or USDT-based) from the GitHub repositories listed above.
